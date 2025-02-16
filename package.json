@@ -1,0 +1,32 @@
+{
+  "name": "info-system-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.infosystem",
+    "productName": "Information System",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.business"
+    }
+  },
+  "devDependencies": {
+    "electron-builder": "^25.1.7",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-fileupload": "^1.5.1",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.16",
+    "path": "^0.12.7"
+  }
+}
