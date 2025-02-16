@@ -1,0 +1,527 @@
+/* Button styling */
+.submit-button {
+  background-color: #173b45;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.completion-message {
+  text-align: center;
+  color: #27ae60; /* Green for success */
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #145b67;
+ }
+.cancellation-message {
+  text-align: center;
+  color: #e74c3c;
+  font-size: 16px;
+  margin-top: 10px;
+}
+#statusMessageContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+/* Align the buttons to match Customer Orders page */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* material List Table */
+#orderTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+#orderTable th,
+#orderTable td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+#orderTable th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+#orderTable td {
+  color: #173b45;
+}
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Content Styling */
+.modal-content {
+  background-color: #f5f7f8;
+  margin: 0 auto;
+  margin: calc(10% - 65px) auto; 
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font */
+}
+
+/* Modal Title */
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #173b45;
+  font-weight: 600; /* Bold heading */
+  text-align: center;
+}
+/* Close Button */
+.close-button {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Form Label Styling */
+.form-group label {
+  display: block;
+  font-size: 1.1rem; /* Slightly larger for readability */
+  font-weight: 600; /* Bold label */
+  margin-bottom: 5px;
+  color: #173b45;
+}       
+
+.form-group input,
+.form-group textarea {
+  width: 96%;
+  padding: 10px;
+  /* margin: 5px; */
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+.close,
+.close-info {
+  color: #173b45;
+  float: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close-info:hover {
+  color: #173b45;
+}
+
+/* Table styling */
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.order-table th {
+  background-color: #173b45;
+  color: #f8eded;
+}
+
+.order-table tr:nth-child(even) {
+  background-color: #f5f7f8;
+}
+
+/* Form and input styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Menu button styling */
+.menu-button {
+  background-color: #173b45;
+  color: white;
+  border: none;
+  margin-left: 40px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+  background-color: #145b67;
+}
+
+.more-info-button,
+.order-received-button {
+  background-color: #173b45;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Consistent button styles with Customer Orders */
+.placeOrder, #deleteOrderButton, .menu-button {
+  background-color: #173b45;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 10rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+#deleteOrderButton {
+  background-color: #e74c3c;
+}
+
+.placeOrder:hover, #deleteOrderButton:hover, .menu-button:hover {
+  background-color: #145b67;
+}
+
+#deleteOrderButton:hover {
+  background-color: #943025; /* Darker red on hover for Delete Order */
+}
+
+/* Style for the selected row */
+.selected-row {
+  background-color: #add8e6 !important; /* Light blue background */
+  color: #004d40 !important; /* Darker text for contrast */
+  font-weight: bold;
+}
+/* General Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #bed0d4; 
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url('../images/springs_pic.png');
+  background-size: cover; /* Ensure the image covers the entire page */
+  background-repeat: no-repeat; /* No repetition */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Fix background during scrolling */
+  background-blend-mode: overlay;
+}
+/* orders List Table */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+/* customers List Table */
+.analytics-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.analytics-table th,
+.analytics-table td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+.analytics-table th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.analytics-table td {
+  color: #173b45;
+}
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.orders-table td {
+  color: #173b45;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0.6rem auto;
+  color: #173b45;
+  padding: 1rem;
+  background-color: #f5f7f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: #173b45;
+  margin-bottom: 1.5rem;
+}
+header p {
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Time Display */
+#timeDisplay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  color: #173b45;
+  background-color: #ddd;
+  padding: 0.25rem;
+  text-align: left;
+  width: 6rem;
+  border-radius: 4px;
+  z-index: 1000;
+  padding: 0.25rem;
+}
+/* For Table */
+/* Table Styling */
+.table-container {
+  flex: 1;
+  overflow-y: auto;
+
+  max-height: calc(100vh - 200px); /* Adjust this value as needed */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #173b45;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  padding: 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+td {
+  text-align: left;
+  padding: 0.75rem;
+  background-color: #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+tr:nth-child(even) td {
+  background-color: #f5f7f8;
+}
+
+/* Container for the Menu button */
+.menu-container {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  width: 100%; /* Make sure the container spans the full width */
+  margin-top: 15px; /* Add spacing between the table and the button */
+}
+
+/* Menu Button Styles */
+.menu-button {
+  width: 120px;
+  padding: 10px;
+  background-color: #173b45;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+/* Modal Styling */
+#infoModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#infoModal .modal-content {
+  background-color: #f5f7f8;
+  margin: calc(10% - 65px) auto; 
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+#infoModal .modal-content h2 {
+  margin-top: 0;
+  color: #173b45;
+  text-align: center;
+  font-size: 1.5em; /* Match font size */
+}
+
+/* Close Button */
+.close-info {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-info:hover {
+  color: #173b45;
+}
+
+#infoModal p {
+  color: #333;
+  font-size: 1em; /* Match font size */
+  margin: 10px 0;
+}
+
+/* Align the content to match the Place Order modal */
+#infoModal p span {
+  color: #173b45;
+  font-weight: bold;
+}
+/* Adjust the Menu button to be at the bottom */
+.menu-container {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  position: fixed;
+  bottom: 20px;
+  width: 90%;
+  max-width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f5f7f8; /* Optional: adds a background color to the button container */
+  padding: 10px 0;
+  z-index: 1000;
+  border-top: 1px solid #173b45; /* Optional: adds a top border for separation */
+}
+
+/* Menu Button Styles */
+.menu-button {
+  width: 120px;
+  padding: 10px;
+  background-color: #173b45;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+/* Hover effect for Menu button */
+.menu-button:hover {
+  background-color: #145b67;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-button {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}

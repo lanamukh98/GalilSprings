@@ -1,0 +1,404 @@
+/* Align buttons side by side */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px; /* Adjust space between buttons and the table */
+}
+
+/* material List Table */
+.material-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+#deleteOrderBtn{
+  display: flex;
+  justify-content: space-between;
+  float:right;
+}
+.material-table th,
+.material-table td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+.material-table th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.material-table td {
+  color: #173b45;
+}
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  /* margin: 0 3px; */
+  transition: background-color 0.3s;
+}
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.form-inline label {
+  margin-right: -280px; /* Ensures a 10px space between the label and the checkbox */
+}
+
+input[type="checkbox"] {
+  accent-color: lightblue; /* Changes the checkbox color to light blue */
+}
+
+
+/* Open Order and Delete Order buttons: same size */
+.btn-green, .btn-red {
+  padding: 10px 20px; /* Ensure consistent padding for both buttons */
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn-green {
+  background-color: #173b45;
+  color: whitesmoke;
+}
+
+.btn-red {
+  background-color: rgb(241, 52, 52); /* Red for Delete Order */
+  margin-left: 10px; /* Space between Open and Delete buttons */
+  color: whitesmoke;
+
+}
+/* Form and Modal Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.submit-button {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #173b45;
+  color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #145b67;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fff;
+  color: #173b45;
+  margin: calc(5% - 50px) auto; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 50%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.close-button {
+  cursor: pointer;
+  float: right;
+  color: #145b67;
+  font-size: 1.5rem;
+}
+
+.close-button:hover {
+  color: #173b45;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+/* Menu Button */
+.menu-button {
+  display: inline-block;
+  width: 100px;
+  padding: 10px;
+  background-color: #173b45;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+
+
+/* Show Notes Button */
+.show-notes-button {
+  background-color: #173b45;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* Add transition for smooth background change */
+.material-table tr {
+  transition: background-color 0.4s ease, color 0.4s ease; /* Smooth transition for background color */
+}
+
+/* Brighter color for the selected row */
+.material-table tr.selected-row {
+  background-color: #b3e5fc !important; /* Bright light blue background */
+  color: #004d40 !important; /* Darker text for contrast */
+  font-weight: bold;
+}
+/* General Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #bed0d4; 
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url('../images/springs_pic.png');
+  background-size: cover; /* Ensure the image covers the entire page */
+  background-repeat: no-repeat; /* No repetition */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Fix background during scrolling */
+  background-blend-mode: overlay;
+}
+/* orders List Table */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+/* customers List Table */
+.analytics-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.analytics-table th,
+.analytics-table td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+.analytics-table th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.analytics-table td {
+  color: #173b45;
+}
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.orders-table td {
+  color: #173b45;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0.6rem auto;
+  color: #173b45;
+  padding: 1rem;
+  background-color: #f5f7f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: #173b45;
+  margin-bottom: 1.5rem;
+}
+header p {
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Time Display */
+#timeDisplay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  color: #173b45;
+  background-color: #ddd;
+  padding: 0.25rem;
+  text-align: left;
+  width: 6rem;
+  border-radius: 4px;
+  z-index: 1000;
+  padding: 0.25rem;
+}
+/* For Table */
+/* Table Styling */
+.table-container {
+  flex: 1;
+  overflow-y: auto;
+
+  max-height: calc(100vh - 200px); /* Adjust this value as needed */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #173b45;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  padding: 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+td {
+  text-align: left;
+  padding: 0.75rem;
+  background-color: #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+tr:nth-child(even) td {
+  background-color: #f5f7f8;
+}
+
+/* Container for the Menu button */
+.menu-container {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  width: 100%; /* Make sure the container spans the full width */
+  margin-top: 15px; /* Add spacing between the table and the button */
+}
+/* Hover effect for Menu button */
+.menu-button:hover {
+  background-color: #145b67; /* Hover background color */
+}
+.btn-green:hover{
+  background-color: #145b67; /* Hover background color */
+
+}
+.btn-red:hover{
+  background-color: #c0392b;
+
+}
+/* Container for the Menu button */
+.menu-container {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  width: 100%; /* Make sure the container spans the full width */
+  margin-top: 15px; /* Add spacing between the table and the button */
+  position: relative; /* Relative positioning to contain the horizontal line */
+}
+
+/* Horizontal line above the menu */
+.menu-container::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #173b45; /* Same color as table borders */
+  position: absolute;
+  top: -10px; /* Adjust the vertical position of the line */
+  left: 0;
+}
+
+/* Menu Button */
+.menu-button {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #173b45;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hover effect for Menu button */
+.menu-button:hover {
+  background-color: #145b67; /* Slightly darker on hover */
+}

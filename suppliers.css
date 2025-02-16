@@ -1,0 +1,755 @@
+/* Search Input Styling */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 1rem; */
+}
+/* Worker List Table */
+.supplierTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.supplierTable th,
+.supplierTable td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+.supplierTable th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.supplierTable td {
+  color: #173b45;
+}
+#searchSupplierInput {
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Buttons */
+.action-button,
+.menu-button {
+  background-color: #173b45;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.action-button:hover,
+.menu-button:hover {
+  background-color: #173b45;
+}
+
+/* Success/Error Message */
+#statusMessage {
+  color: red;
+  font-weight: bold;
+}
+/* suppliers List Table */
+.supplierTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.supplierTable th,
+.supplierTable td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+.supplierTable th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.supplierTable td {
+  color: #173b45;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #173b45;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+/* Button Container */
+.button-container1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.submit-button {
+  background-color: #173b45; /* Primary button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.submit-button:hover {
+  background-color: #e8b86d; /* Change button color on hover */
+}
+
+.delete-button {
+  background-color: #ff4d4d; /* Red color for delete */
+}
+
+.delete-button:hover {
+  background-color: #ff6666;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #173b45;
+  transition: color 0.3s ease;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #173b45;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #173b45;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.submit-button {
+  background-color: #173b45;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.submit-button:hover {
+  background-color: #173b45;
+}
+
+/* Delete Button inside modal */
+.delete-button {
+  background-color: #e74c3c;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+.supplier-list-container {
+  overflow-y: auto;
+  max-height: 60vh;
+  background-color: #fff;
+}
+/* Icon Styling */
+.supplier-table td .icon {
+  font-size: 1.2rem; /* Adjust icon size */
+  color: #173b45;
+  cursor: pointer;
+}
+
+.supplier-table td .icon:hover {
+  color: #145a3a;
+}
+
+/* Fix for large icons */
+.icon-large {
+  font-size: 1.5rem; /* This makes icons smaller */
+}
+
+/* Icons Styles */
+.edit-icon {
+  width: 20px; /* Icon width */
+  height: auto; /* Maintain aspect ratio */
+  cursor: pointer;
+}
+
+.show-notes-button {
+  background-color: #173b45;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.show-notes-button:hover {
+  background-color: #173b45;
+  color: #f5f7f8;
+}
+
+/* Add/Edit Supplier Modal */
+#supplierModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+
+.close-button {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #fc4545;
+}
+
+
+/* Supplier Delete Button */
+#deleteSupplierInsideModal {
+  display: none;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#deleteSupplierInsideModal:hover {
+  background-color: #c0392b;
+}
+
+/* Search input styling */
+#searchSupplierInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* Ensure modal is hidden by default */
+#notesModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+/* Modal Content Styling */
+.modal-content {
+  background-color: #f5f7f8;
+  margin: 0 auto;
+  margin-top: calc(10% - 100px);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font */
+}
+
+/* Modal Title */
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #173b45;
+  font-weight: 600; /* Bold heading */
+  text-align: center;
+}
+
+/* Form Label Styling */
+.form-group label {
+  display: block;
+  font-size: 1.1rem; /* Slightly larger for readability */
+  font-weight: 600; /* Bold label */
+  margin-bottom: 5px;
+  color: #173b45;
+}
+
+/* Input and Textarea Styling */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem; /* Font size */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* Button Container */
+.button-container1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Submit Button Styling */
+.submit-button {
+  background-color: #173b45;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600; /* Bold button text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #145b67;
+}
+
+/* Delete Button */
+.delete-button {
+  background-color: #e74c3c; /* Red color for delete */
+  font-weight: 600; /* Bold button text */
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+
+
+
+/* Close button */
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover, .close-button:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* Notes content style */
+#notesContent {
+  background-color: #f8f8f8;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  word-wrap: break-word;
+}
+/* General Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #bed0d4; 
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url('../images/springs_pic.png');
+  background-size: cover; /* Ensure the image covers the entire page */
+  background-repeat: no-repeat; /* No repetition */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Fix background during scrolling */
+  background-blend-mode: overlay;
+}
+/* orders List Table */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+/* customers List Table */
+.analytics-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.analytics-table th,
+.analytics-table td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+.analytics-table th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.analytics-table td {
+  color: #173b45;
+}
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.orders-table td {
+  color: #173b45;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0.6rem auto;
+  color: #173b45;
+  padding: 1rem;
+  background-color: #f5f7f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: #173b45;
+  margin-bottom: 1.5rem;
+}
+header p {
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Time Display */
+#timeDisplay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  color: #173b45;
+  background-color: #ddd;
+  padding: 0.25rem;
+  text-align: left;
+  width: 6rem;
+  border-radius: 4px;
+  z-index: 1000;
+  padding: 0.25rem;
+}
+/* For Table */
+/* Table Styling */
+.table-container {
+  flex: 1;
+  overflow-y: auto;
+
+  max-height: calc(100vh - 200px); /* Adjust this value as needed */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #173b45;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  padding: 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+td {
+  text-align: left;
+  padding: 0.75rem;
+  background-color: #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+tr:nth-child(even) td {
+  background-color: #f5f7f8;
+}
+
+/* Container for the Menu button */
+.menu-container {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  width: 100%; /* Make sure the container spans the full width */
+  margin-top: 15px; /* Add spacing between the table and the button */
+}
+
+/* Menu Button Styles */
+.menu-button {
+  width: 120px;
+  padding: 10px;
+  background-color: #173b45;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.menu-button:hover{
+  background-color: #145b67;
+
+}
+#addSupplierButton:hover{
+  background-color: #145b67;
+}
+.submit-button:hover{
+  background-color: #145b67;
+}
+/* Button styling for Add Worker and Menu buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 20px;
+  width: 90%;
+  max-width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f5f7f8; /* Optional: adds a background color to the button container */
+  padding: 10px 0;
+  z-index: 1000;
+  border-top: 1px solid #173b45; /* Optional: adds a top border for separation */
+}
+
+/* Ensure that buttons look similar to Customer Orders page */
+#addSupplierButton,
+.menu-button {
+  padding: 10px 20px;
+  background-color: #173b45;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+#addSupplierButton:hover,
+.menu-button:hover {
+  background-color: #145b67; /* Hover background color */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #addSupplierButton,
+  .menu-button {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Table styling for consistency */
+.supplierTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px; /* Adjust the margin to avoid the overlap with the fixed button container */
+}
+
+.supplierTable th,
+.supplierTable td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+.supplierTable th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.supplierTable td {
+  color: #173b45;
+}
+/* Disable interaction with background content when modal is open */
+body.modal-open {
+  pointer-events: none; /* This disables interaction with all content */
+}
+
+/* Re-enable interaction with modal content */
+#supplierModal {
+  pointer-events: auto; /* Allow interaction with modal */
+  z-index: 1000; /* Ensure modal stays on top */
+}
+
+#supplierModal .modal-content {
+  pointer-events: auto; /* Ensure modal content is interactive */
+  z-index: 1001; /* Ensure content is above modal background */
+}
+/* Initially hide the modal */
+#notesModal {
+  display: none; /* Hide the modal by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
+  pointer-events: auto; /* Enable interaction with the modal itself */
+}
+
+/* Modal content styling */
+#notesModal .modal-content {
+  pointer-events: auto; /* Ensure modal content is interactive */
+  z-index: 1001; /* Ensure modal content stays on top */
+  background-color: #f5f7f8;
+  margin: calc(10% - 100px) auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Disable interaction with background when modal is open */
+body.modal-open {
+  overflow: hidden; /* Prevent scrolling when modal is open */
+  pointer-events: none; /* Disable interaction with background content */
+}
+
+/* Ensure that the modal is interactive */
+#notesModal {
+  pointer-events: auto; /* Allow interaction with modal */
+}
+
+/* Disable interaction with background elements */
+.menu-container, .button-container {
+  pointer-events: none; /* Disable clicks on the menu and buttons when modal is open */
+}
+
+/* Re-enable interaction with background when modal is closed */
+body:not(.modal-open) .menu-container, 
+body:not(.modal-open) .button-container {
+  pointer-events: auto; /* Allow normal interaction when modal is closed */
+}
+
+/* Close button */
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover, .close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

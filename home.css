@@ -1,0 +1,311 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #bed0d4;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #088395;
+  background-image: url('../images/springs_pic.png');
+  background-size: cover; /* Ensure the image covers the entire page */
+  background-repeat: no-repeat; /* No repetition */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Fix background during scrolling */
+  background-blend-mode: overlay;
+}
+
+/* Container with Half Transparency */
+.container {
+  max-width: 1000px; /* Increase form width */
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.746); /* Half-transparent background */
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header h1 {
+  font-size: 3em; /* Increase title size */
+  color: #173b45;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 1.5em; /* Increase subtitle size */
+  color: #088395;
+  margin-bottom: 40px;
+}
+
+/* Time Display Style */
+.time-display {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  color: #173b45;
+  background-color: #ddd;
+  padding: 0.25rem;
+  text-align: left;
+  width: 6rem;
+  border-radius: 4px;
+  z-index: 1000;
+  padding: 0.25rem;
+
+}
+
+.button-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap to the next row */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 30px; /* Add spacing between buttons */
+  margin-bottom: 40px;
+}
+
+/* Buttons Styling */
+
+/* Center align the last row with 2 buttons */
+.button-grid .last-row {
+  flex: 0 1 calc(50% - 15px); /* Each button in the last row takes half the width of the container */
+}
+
+
+.button-grid button {
+  background-color: #088395;
+  color: #fff;
+  flex: 0 1 calc(33.33% - 30px); /* Each button takes one-third of the row, minus the gap */
+  max-width: 300px; /* Optional: Set a maximum width for buttons */
+  text-align: center; /* Center-align text in the button */
+  padding: 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-grid button:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  background-color: #06637e; /* Darker shade on hover */
+}
+
+.button-grid button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(23, 59, 69, 0.3); /* Highlight on focus */
+}
+
+
+/* Buttons */
+button {
+  background-color: #088395;
+  color: #fff;
+  padding: 18px; /* Increase padding */
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px; /* Larger button font */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(23, 59, 69, 0.3);
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+/* Logout Button */
+.logout-button {
+  background-color: #ff4d4d;
+  font-size: 18px;
+  max-width: 300px;
+  padding: 18px 0;
+  width: 100%;
+}
+
+.logout-button:hover {
+  background-color: #e83636;
+}
+
+/* Low Stock Alert Animation */
+.low-stock-alert {
+  animation: pulse 1.5s infinite;
+  background-color: #ff4d4d; /* Change background to red for attention */
+}
+/* Buttons */
+button {
+  background-color: #088395;
+  color: #fff;
+  padding: 18px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(23, 59, 69, 0.3);
+}
+
+/* Animation for low stock alert */
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.low-stock-alert {
+  background-color: #ff4d4d; /* Red background for low stock alert */
+  animation: zoomInOut 0.5s ease-in-out 4; /* Zoom animation (4 times) */
+}
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 350px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.4s ease;
+}
+
+.modal-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #088395;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.modal-content input {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #088395;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn {
+  background-color: #088395;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #06637e;
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+    background-color: red;
+    box-shadow: 0 0 5px red;
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px red;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px red;
+  }
+}
+
+.low-stock-alert {
+  animation: zoomInOut 1s ease-in-out 2; /* Animation duration and repeat count */
+  background-color: red !important; /* Ensure background color stays red */
+  color: white;
+  border: 2px solid darkred;
+}

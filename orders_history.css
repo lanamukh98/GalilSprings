@@ -1,0 +1,568 @@
+/* Filters */
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+/* orders List Table */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+/* Time Display */
+.time-display {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  color: #173b45;
+  background-color: #ddd;
+  padding: 0.25rem;
+  text-align: left;
+  width: 6rem;
+  border-radius: 4px;
+  z-index: 1000;
+  padding: 0.25rem;
+}
+.orders-table th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.orders-table td {
+  color: #173b45;
+}
+.filter {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.filter label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filter input,
+.filter select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 7px 7px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin: 1px 0;
+  width: 150px;
+  transition: background-color 0.3s;
+}
+
+.btn-blue {
+  background-color: #173b45; /* Green background */
+  /* margin: 1rem; */
+  width: 10rem;
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding for the button */
+  font-size: 1.1em; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.btn-red {
+  background-color: rgb(241, 52, 52);
+  color: white;
+}
+
+.btn-info {
+  background-color: #173b45;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Orders Table */
+.material-list-container {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 1rem;
+  max-height: calc(100vh - 200px); /* Adjust this value as needed */
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #173b45;
+  color: whitesmoke;
+}
+
+.orders-table tr:nth-child(even) {
+  background-color: #f5f7f8;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 50%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.close-button {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #fc4545;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.menu-div {
+  display: inline-block;
+  margin-top: 4px;
+
+}
+/* Menu Button */
+.menu-button {
+  display: inline-block;
+  width: 120px;
+  padding: 10px;
+  background-color: #173b45;
+  margin-top: 15px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+/* General Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #bed0d4; 
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url('../images/springs_pic.png');
+  background-size: cover; /* Ensure the image covers the entire page */
+  background-repeat: no-repeat; /* No repetition */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Fix background during scrolling */
+  background-blend-mode: overlay;
+}
+/* orders List Table */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+/* customers List Table */
+.analytics-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.analytics-table th,
+.analytics-table td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+.analytics-table th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.analytics-table td {
+  color: #173b45;
+}
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  border: 1px solid #173b45;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #173b45;
+  color: white;
+  font-weight: bold;
+}
+
+.orders-table td {
+  color: #173b45;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0.6rem auto;
+  color: #173b45;
+  padding: 1rem;
+  background-color: #f5f7f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: #173b45;
+  margin-bottom: 1.5rem;
+}
+header p {
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Time Display */
+#timeDisplay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  color: #173b45;
+  background-color: #ddd;
+  padding: 0.25rem;
+  text-align: left;
+  width: 6rem;
+  border-radius: 4px;
+  z-index: 1000;
+  padding: 0.25rem;
+}
+/* For Table */
+/* Table Styling */
+.table-container {
+  flex: 1;
+  overflow-y: auto;
+
+  max-height: calc(100vh - 200px); /* Adjust this value as needed */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #173b45;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  padding: 0.75rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+td {
+  text-align: left;
+  padding: 0.75rem;
+  background-color: #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+tr:nth-child(even) td {
+  background-color: #f5f7f8;
+}
+
+/* Container for the Menu button */
+.menu-container {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  width: 100%; /* Make sure the container spans the full width */
+  margin-top: 15px; /* Add spacing between the table and the button */
+}
+
+/* Menu Button Styles */
+.menu-button {
+  width: 120px;
+  padding: 10px;
+  background-color: #173b45;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.menu-button:hover{
+  background-color: #145b67;
+
+}
+.btn-blue:hover{
+  background-color: #145b67;
+
+}
+/* Container for the Menu button */
+.menu-container {
+  display: flex;
+  justify-content: flex-end; /* Align the button to the right */
+  width: 100%; /* Make sure the container spans the full width */
+  margin-top: 15px; /* Add spacing between the table and the button */
+}
+
+/* Menu Button Styles */
+.menu-button {
+  width: 120px;
+  padding: 10px;
+  background-color: #173b45;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+/* Menu and Export Button Container with Horizontal Line */
+.menu-container {
+  display: flex;
+  justify-content: space-between; /* Space between the buttons */
+  width: 100%;
+  margin-top: 15px; /* Spacing above the buttons */
+  padding-top: 15px; /* Space between the line and the buttons */
+  border-top: 2px solid #173b45; /* Horizontal line above the buttons */
+}
+
+/* Menu Button Styles */
+.menu-button, .export-button {
+  width: 120px;
+  padding: 10px;
+  background-color: #173b45;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+/* Hover effect for both buttons */
+.menu-button:hover, .export-button:hover {
+  background-color: #145b67;
+}
+/* Container for the Menu and Export buttons with Horizontal Line */
+.menu-container {
+  display: flex;
+  justify-content: space-between; /* Space between the buttons */
+  width: 100%;
+  margin-top: 15px; /* Spacing above the buttons */
+  padding-top: 15px; /* Space between the line and the buttons */
+  border-top: 1px solid #173b45; /* Horizontal line above the buttons */
+  background-color: #f5f7f8; /* Optional: same background as the content area */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 10px; /* Adjusted to move the buttons down by 30px */
+  width: 90%;
+  max-width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f5f7f8; /* Optional: adds a background color to the button container */
+  padding: 10px 0;
+  z-index: 1000;
+  border-top: 1px solid #173b45; /* Optional: adds a top border for separation */
+}
+
+/* Ensure buttons look similar to other pages */
+#addMaterialButton,
+.menu-button {
+  padding: 10px 20px;
+  background-color: #173b45;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+#addMaterialButton:hover,
+.menu-button:hover {
+  background-color: #145b67; /* Hover background color */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #addMaterialButton,
+  .menu-button {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+/* Export Section */
+.export-section {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  /* margin-bottom: 20px; */
+  display: inline-block;
+  /* margin-left: 10rem; */
+}
+
+.export-section label {
+  margin-right: 10px;
+}
+
+.export-section select,
+.export-section button {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.export-section select {
+  border: 1px solid #cccccc;
+}
+
+.export-section button {
+  background-color: #173b45;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.export-section button:hover {
+  background-color: #173b45;
+}
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000; /* Higher z-index to ensure the modal is above all other elements */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto; /* Enable pointer events for modal */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 50%;
+  max-width: 600px;
+  border-radius: 10px;
+  z-index: 1001; /* Keep content above the modal background */
+}
+
+.close-button {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #fc4545;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+/* Disable all other page interactions when modal is open */
+body.modal-open .container,
+body.modal-open .button-container {
+  pointer-events: none; /* Disable interaction with all elements except the modal */
+  opacity: 0.5; /* Optional: dim the content behind the modal */
+}
